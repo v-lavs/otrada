@@ -3,13 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Отрада.</title>
+    <title>Отрада</title>
     <!--зaкрыть индексацию -->
     <meta name="googlebot" content="noindex, nofollow"/>
     <meta name="robots" content="noindex">
     <meta name="yandex" content="none"/>
+    <!--style-->
+    <link rel="stylesheet" href="slyle.css">
 </head>
 <body>
+<div class="wrapper">
+    <header class="header">
+        <h1 class="title-site">
+            <a href="/" class="logo-site">
+                <img src="assets/img/logo.svg" alt="Отрада" class="img logo-site__img">
+            </a>
+        </h1>
+        <nav id="menu" class="header__nav">
+            <button id="btnBurger" class="btn-burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
 
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link nav-list__link_active">Поздравления</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">История создания</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Отрада в цифрах</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Знатокам Отрады</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Игры</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="section section-intro">
+        <div class="wrap-video">
+            <iframe class="video" width="1205" height="678"
+                    src="https://www.youtube.com/embed/iOxzG3jjFkY?list=RDMMiOxzG3jjFkY" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="container container-default">
+                <button class="open-video play" id="playBtn"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-create-avatar">
+        <div class="container">
+            <div class="form-wrap">
+                <div class="section__heading">
+                    <h2 class="section__title">Создай праздничный аватар</h2>
+                </div>
+                <form action="#" class="form-upload-avatar">
+                    <label for="fileImg" class="avatar-card label-upload" tabindex="0">
+                        <input type="file" name="photo" accept="image/*" id="fileImg">
+                        <div class="img-wrap"></div>
+                        <p>Загрузи свою фотографию или сделай селфи</p>
+                    </label>
+                    <div id="imgPrev" class="avatar-card">
+                        <div class="img-wrap bg-dark"></div>
+                        <p class="avatar-card__text">Скачай аватар и установи в соцсетях</p>
+                        <a href="#" download class="btn btn-download">Скачать</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-video">
+        <div class="container">
+            <div class="block-video">
+                <iframe class="video" width="1205" height="678"
+                        src="https://www.youtube.com/embed/iOxzG3jjFkY?list=RDMMiOxzG3jjFkY" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-congratulate">
+        <div class="container">
+            <h2 class="section__title">Поздравь Отраду</h2>
+            <form action="#" class="form-congratulate">
+                <div class="form-group">
+                    <label for="name" class="label">Имя</label>
+                    <input type="text" class="input" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="massage" class="label">Поздравление</label>
+                    <textarea name="massage" id="massage" cols="30" rows="6" class="input"></textarea>
+                </div>
+                <div class="wrap-btn-submit">
+                    <button type="submit" class="btn btn-submit">Отправить</button>
+                </div>
+            </form>
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Лидия Соловьёва</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                                lacus vel facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Константин Константинопольский</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Павел Зизяев</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                                nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                                dolor in hendrerit in vulputate velit esse molestie consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Дарья Четверик</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Павел Зизяев</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                                nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                                dolor in hendrerit in vulputate velit esse molestie consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Лидия Соловьёва</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                                lacus vel facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card-testimonial">
+                        <div class="card-testimonial__heading">
+                            <span class="author"> Константин Константинопольский</span>
+                        </div>
+                        <div class="card-testimonial__body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-btn-continue">
+                <a href="#" class="btn">Продолжить</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
