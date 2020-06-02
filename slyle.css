@@ -112,10 +112,11 @@ body {
   vertical-align: middle;
 }
 
+/*------COMING-SOON----*/
 .section-coming-soon {
   width: 100%;
   display: table;
-  background-image: url(assets/img/IMG/BG.jpg);
+  background-image: url(assets/img/BG.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -131,15 +132,17 @@ body {
 .section-coming-soon__description {
   text-transform: uppercase;
   font-size: 20px;
-  letter-spacing: 8px;
+  letter-spacing: 0.4em;
 }
 
 .section-coming-soon .logo-site {
   display: inline-block;
-  margin: 0 auto 88px;
+  margin: 0 auto 85px;
   width: 274px;
-  height: 188px;
+  height: auto;
 }
+
+/*------------------------------------------*/
 
 /*========COUNTDOWN=========*/
 #countdown {
@@ -192,6 +195,11 @@ body {
     display: table-cell;
     vertical-align: middle;
   }
+  .countdown__date-number {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 21px;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -214,11 +222,34 @@ body {
   .container {
     max-width: 420px;
   }
+
   .section-coming-soon .logo-site {
     width: 65%;
+    margin-bottom: 40px;
   }
 
   .section-coming-soon__description {
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media all and (max-height: 480px) and (orientation: landscape) {
+  .section-coming-soon {
+    padding: 5.5% 0;
+  }
+
+  .section-coming-soon .logo-site {
+    max-width: 160px;
+    margin-bottom: 30px;
+  }
+
+  #countdown {
+    margin-bottom: 20px;
+  }
+  .section-coming-soon__description {
+    font-size: 18px;
+  }
+  .countdown__date-number {
+    font-size: 16px;
   }
 }
