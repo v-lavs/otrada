@@ -1,11 +1,10 @@
 //coutdown
 
-var countDownDate = new Date("July 19, 2020 24:00").getTime();
+var countDownDate = new Date(2020, 7, 19, 24, 0).getTime();
 
 var daysTag = document.getElementById("days");
 var hoursTag = document.getElementById("hours");
 var minutesTag = document.getElementById("minutes");
-var secondsTag = document.getElementById("seconds");
 
 var x = setInterval(function() {
 
@@ -26,21 +25,21 @@ var x = setInterval(function() {
 }, 1000);
 
 // menu
-function respMenu() {
-
-    let burger = document.getElementById('btnBurger');
-    let close = document.getElementById('btnClose');
-    let menuResp = document.getElementById('menu');
-
-    burger.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuResp.classList.add('nav-open');
-    });
-
-    close.addEventListener('click', function (e) {
-        e.preventDefault();
-        menuResp.classList.remove('nav-open');
-    });
-}
-
-respMenu();
+// function respMenu() {
+//
+//     var burger = document.getElementById('btnBurger');
+//     var close = document.getElementById('btnClose');
+//     var menuResp = document.getElementById('menu');
+//
+//     burger.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         menuResp.classList.add('nav-open');
+//     });
+//
+//     close.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         menuResp.classList.remove('nav-open');
+//     });
+// }
+//
+// respMenu();
