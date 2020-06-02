@@ -144,11 +144,6 @@ body {
   .container{
     max-width: 420px;
   }
-
-  .section-coming-soon .logo-site{
-    /*width: 65%;*/
-    /*height: auto;*/
-  }
   .section-coming-soon__description{
     letter-spacing: 1px;
   }
