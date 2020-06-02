@@ -110,19 +110,44 @@ body {
 }
 
 /*============RESPONSIVE================*/
+@media all and (max-width: 1200px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .container{
+    max-width: 960px;
+  }
+
+  .section-coming-soon{
+    display: flex;
+  }
+  .section-coming-soon .container{
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+
+  .section-coming-soon .logo-site{
+    width: 65%;
+    height: auto;
+  }
+}
+
 @media all and (max-width: 540px) {
   .container{
     max-width: 420px;
   }
-  .section-coming-soon{
-    display: flex;
-  }
- .section-coming-soon .container{
-   margin: auto;
- }
+
   .section-coming-soon .logo-site{
-    width: 65%;
-    height: auto;
+    /*width: 65%;*/
+    /*height: auto;*/
   }
   .section-coming-soon__description{
     letter-spacing: 1px;
