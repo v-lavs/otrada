@@ -8,42 +8,44 @@ $(document).ready(function () {
     });
 
     var scrolled;
-    window.onscroll = function () {
+
+    function onHeaderScrol() {
         scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrolled > 100) {
-            $(".header").css({"background": "rgba(0, 85, 137, .6)", "padding-top": "20px"})
-        }
-        if (100 > scrolled) {
-            $(".header").css({"background": "transparent", "padding-top": "50px"})
+        if (scrolled > 50) {
+            $(".header").addClass('header_active');
+        } else {
+            $(".header").removeClass('header_active');
         }
     }
+
+    $(document).on('scroll', function () {
+        onHeaderScrol()
+    });
+
+    onHeaderScrol();
+
+    $('#btnBurger').click(function (e) {
+        e.preventDefault();
+        $('.nav-list').animate({width: 'toggle', height: 'toggle'}, 500);
+        $('.header__nav').toggleClass('header__nav_open');
+        $('.header').toggleClass('header_backdrop');
+    });
+
+    function prepareMobNav() {
+        var windowW = $(window).width();
+        if (windowW <= 980) {
+            // $('.header__nav').removeClass('header__nav_open');
+        }
+    }
+
+    $(window).on('resize', function () {
+        prepareMobNav();
+    });
+
+    prepareMobNav();
 
 
 });
 
-//coutdown
-window.onload = function () {
-    var countDownDate = new Date(2020, 7, 19, 24, 0).getTime();
 
-    var daysTag = document.getElementById("days");
-    var hoursTag = document.getElementById("hours");
-    var minutesTag = document.getElementById("minutes");
 
-    var x = setInterval(function () {
-
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-        daysTag.innerHTML = days;
-        hoursTag.innerHTML = hours;
-        minutesTag.innerHTML = minutes;
-
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-};

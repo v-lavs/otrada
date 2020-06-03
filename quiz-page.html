@@ -11,7 +11,7 @@
     <!--style-->
     <link rel="stylesheet" href="slyle.css">
 </head>
-<body>
+<body class="page-quiz">
 <div class="wrapper">
     <header class="header">
         <h1 class="title-site">
@@ -19,7 +19,8 @@
                 <img src="assets/img/logo.svg" alt="Отрада" class="img logo-site__img">
             </a>
         </h1>
-        <nav id="menu" class="header__nav">
+
+        <nav id="menu" class="header__nav header__nav_open">
             <button id="btnBurger" class="btn-burger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -28,7 +29,7 @@
 
             <ul class="nav-list">
                 <li class="nav-list__item">
-                    <a href="#" class="nav-list__link nav-list__link_active">Поздравления</a>
+                    <a href="#" class="nav-list__link">Поздравления</a>
                 </li>
                 <li class="nav-list__item">
                     <a href="history-page.html" class="nav-list__link">История создания</a>
@@ -37,21 +38,21 @@
                     <a href="#" class="nav-list__link">Отрада в цифрах</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="/" class="nav-list__link">Знатокам Отрады</a>
+                    <a href="quiz-page.html" class="nav-list__link nav-list__link_active">Знаток Отрады</a>
                 </li>
                 <li class="nav-list__item">
                     <a href="#" class="nav-list__link">Игры</a>
                 </li>
             </ul>
         </nav>
-
     </header>
-    <main class="main page-quiz">
+
+    <main class="main">
         <section class="section section-quiz">
             <div class="table-cell">
                 <div class="container">
                     <h2 class="section__title"><span class="text-small">Викторина</span><br> Знаток Отрады</h2>
-                    <div class="content-quiz">
+                    <div class="content-quiz ">
 
                         <div class="content-quiz__part content-quiz__part_question">
                             <div class="wrap-img-question">
@@ -91,14 +92,14 @@
                                     </p>
                                 </li>
                             </ul>
-                        </div>
-
-                        <div class="wrap-btn-quiz">
-                            <a href="#" class="btn">Далее ></a>
+                            <div class="wrap-btn-quiz">
+                                <a href="#" class="btn">Далее ></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="content-quiz ">
-                        <div class="content-quiz__correct-answer">
+
+                    <div class="content-quiz hidden">
+                        <div class="content-quiz_correct-answer">
                             <div class="heading">Правильный ответ:</div>
                             <p class="text-answer">
                                 Ремонтная свинка, проверяемая после 1 опороса для выбраковки или введения в
@@ -109,18 +110,20 @@
                             <a href="#" class="btn">Далее ></a>
                         </div>
                     </div>
-                    <div class="content-quiz content-quiz_result">
-                        <div class="heading">Отличный результат!<br><span class="result">9</span></div>
+
+                    <div class="content-quiz content-quiz_result hidden">
+                        <div class="heading">Отличный результат!</div>
+                        <div class="text-center"><span class="result">9</span></div>
 
                         <div class="block-statistic">
                             <div class="block-statistic__part">
-                                <div class="block-statistic__results">Всего отличных результатов: <span>27</span></div>
-                                <div class="block-statistic__results">Хороших: <span>44</span></div>
+                                <div class="block-statistic__results">Всего отличных результатов: <span class="statistic-number">27</span></div>
+                                <div class="block-statistic__results">Хороших: <span class="statistic-number">44</span></div>
 
                             </div>
                             <div class="block-statistic__part">
-                                <div class="block-statistic__results">Удовлетворительных: <span>31</span></div>
-                                <div class="block-statistic__results">Плохих: <span>12</span></div>
+                                <div class="block-statistic__results">Удовлетворительных: <span class="statistic-number">31</span></div>
+                                <div class="block-statistic__results">Плохих: <span class="statistic-number">12</span></div>
                             </div>
                         </div>
                         <div class="wrap-btn-quiz">
