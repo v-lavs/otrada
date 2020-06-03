@@ -7,6 +7,18 @@ $(document).ready(function () {
         $(this).toggleClass('selected-answer');
     });
 
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 100) {
+            $(".header").css({"background": "rgba(0, 85, 137, .6)", "padding-top": "20px"})
+        }
+        if (100 > scrolled) {
+            $(".header").css({"background": "transparent", "padding-top": "50px"})
+        }
+    }
+
+
 });
 
 //coutdown
