@@ -533,6 +533,7 @@ body {
 /*=========HISTOPY-PAGE=========*/
 .section-history {
   position: relative;
+  display: table;
   width: 100%;
   background-image: url(assets/img/5.jpg);
   background-repeat: no-repeat;
@@ -543,6 +544,10 @@ body {
   min-height: 1080px;
   padding-top: 150px;
   padding-bottom: 30px;
+}
+
+.section-history .container_fluid {
+  display: table-cell;
 }
 
 .section__content {
@@ -817,13 +822,15 @@ body {
     font-size: 15px;
   }
 
-  .section-congratulate .label{
+  .section-congratulate .label {
     width: 20%;
   }
-  .section-congratulate .input{
+
+  .section-congratulate .input {
     width: 80%;
   }
-  .section-congratulate .grid__item{
+
+  .section-congratulate .grid__item {
     width: 33%;
   }
 }
@@ -871,17 +878,16 @@ body {
     text-align: center;
   }
 
-  .section-video{
+  .section-video {
     padding-top: 60px;
   }
 
-  .section-congratulate .grid__item{
+  .section-congratulate .grid__item {
     width: 50%;
   }
 
-  .section-history,
   .section-quiz {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 
   .section-quiz .content-quiz__part {
@@ -895,6 +901,10 @@ body {
 
   .section-quiz .content-quiz__part_question {
     margin-bottom: 60px;
+  }
+
+  .section-history .container_fluid {
+    vertical-align: middle;
   }
 }
 
@@ -917,20 +927,40 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .section-congratulate{
+
+  .section-congratulate {
     padding-top: 60px;
   }
+
   .section-congratulate .label,
-  .section-congratulate .input{
+  .section-congratulate .input {
     width: 100%;
   }
+
   .form-congratulate .form-group {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .card-testimonial__heading .author {
     font-size: 19px;
+  }
+.section-quiz,
+  .section-history {
+    min-height: 100vh;
+  }
+
+  .section-history .section__content {
+    margin: 0 auto 40px;
+    width: 95%;
+    font-size: 20px;
+  }
+  .pagination__item {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    font-size: 14px;
   }
 }
 
@@ -949,7 +979,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .section-congratulate .grid__item{
+  .section-congratulate .grid__item {
     width: 100%;
   }
 
@@ -1002,9 +1032,10 @@ body {
     max-width: 300px;
   }
 
-  .form-congratulate .form-group{
+  .form-congratulate .form-group {
     margin-bottom: 20px;
   }
+
   .section-quiz .content-quiz__part_question:before,
   .section__title {
     font-size: 30px;
@@ -1016,6 +1047,16 @@ body {
 
   .header__nav {
     margin-right: 20px;
+  }
+  .pagination__item {
+    width: 22px;
+    height: 22px;
+    margin-left: 4px;
+    font-size: 11px;
+  }
+  .section-history .section__content {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
