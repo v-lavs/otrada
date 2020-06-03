@@ -1,12 +1,16 @@
 $(document).ready(function () {
     $('.grid').masonry({
         itemSelector: '.grid__item',
-        columnWidth: 300,
-
     });
 
-//coutdown
+    $('.answers-list__item').on('click', function () {
+        $(this).toggleClass('selected-answer');
+    });
 
+});
+
+//coutdown
+window.onload = function () {
     var countDownDate = new Date(2020, 7, 19, 24, 0).getTime();
 
     var daysTag = document.getElementById("days");
@@ -30,24 +34,4 @@ $(document).ready(function () {
             document.getElementById("countdown").innerHTML = "EXPIRED";
         }
     }, 1000);
-
-// menu
-    function respMenu() {
-
-        var burger = document.getElementById('btnBurger');
-        var close = document.getElementById('btnClose');
-        var menuResp = document.getElementById('menu');
-
-        burger.addEventListener('click', function (e) {
-            e.preventDefault();
-            menuResp.classList.add('nav-open');
-        });
-
-        close.addEventListener('click', function (e) {
-            e.preventDefault();
-            menuResp.classList.remove('nav-open');
-        });
-    }
-
-    respMenu();
-});
+};
