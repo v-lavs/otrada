@@ -44,7 +44,12 @@ $(document).ready(function () {
 
     prepareMobNav();
 
-
+    $('.go-to-next').click(function (e) {
+        e.preventDefault();
+        var id = $(e.target).attr('href');
+        $('.content-quiz').addClass('hidden');
+        $(id).removeClass('hidden');
+    })
 });
 
 

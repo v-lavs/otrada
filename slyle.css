@@ -859,7 +859,6 @@ body {
 
 .section-quiz .content-quiz_result {
     width: 100%;
-    max-width: 550px;
     display: block;
 }
 
