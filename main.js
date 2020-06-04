@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     function onHeaderScrol() {
         scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrolled > 50) {
+        if (scrolled > 80) {
             $(".header").addClass('header_active');
         } else {
             $(".header").removeClass('header_active');
