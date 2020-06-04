@@ -1032,7 +1032,9 @@ body {
 .page-analytics:before{
   position: absolute;
   content: '';
-  background-image: url(assets/img/BG.jpg);
+  background-color: #005589;
+  background-image: linear-gradient(212deg, #005589 0%, #3ab2d4 51%, #007bae 71%, #007bae 85%);
+
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
