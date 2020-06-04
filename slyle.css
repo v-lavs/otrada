@@ -1026,10 +1026,11 @@ body {
 }
 
 /*=============ANALYTICS PAGE=================*/
-.page-analytics{
+.page-analytics {
   position: relative;
 }
-.page-analytics:before{
+
+.page-analytics:before {
   position: absolute;
   content: '';
   background-image: url(assets/img/BG.jpg);
@@ -1041,34 +1042,40 @@ body {
   z-index: -1;
   left: 0;
   right: 0;
-  height:1060px;
+  height: 1060px;
 }
-.section-analytics{
+
+.section-analytics {
   width: 100%;
   text-align: center;
   font-size: 20px;
   padding: 150px 0 40px;
 }
-.section-analytics .section__title{
+
+.section-analytics .section__title {
   margin-bottom: 80px;
 }
-.block-analytic__text{
+
+.block-analytic__text {
   margin-bottom: 40px;
 }
-.wrap-diagram{
+
+.wrap-diagram {
   width: 100%;
   max-width: 900px;
   overflow: hidden;
-  margin:0 auto 45px;
+  margin: 0 auto 45px;
 }
-.block-analytic{
+
+.block-analytic {
   margin-bottom: 60px;
 }
 
-.wrap-btn-analytic{
+.wrap-btn-analytic {
   padding-top: 40px;
   text-align: center;
 }
+
 /*============RESPONSIVE, MENU================*/
 @media all and (max-width: 1680px) {
   body {
