@@ -1038,7 +1038,7 @@ body {
   background-image: url(assets/img/BG.jpg);
   display: block;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 0 0;
   -webkit-background-size: cover;
   background-size: cover;
   z-index: -1;
