@@ -782,7 +782,7 @@ body {
 .page-games,
 .page-quiz {
   background-image: url(assets/img/BG.jpg);
-  background-position: center center;
+  background-position: 0 0;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
